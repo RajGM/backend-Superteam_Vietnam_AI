@@ -1,14 +1,23 @@
 // Example Express route for /upload
 const express = require('express');
 const router = express.Router();
-const { processFileToPinecone, deleteVectorsByIds } = require('@lib/query.js');
+const { processFileToPinecone, deleteVectorsByIds, processJSONFile } = require('@lib/query.js');
 const { saveFileVectorIdsToFirebase, fetchFileVectorIdsFromFirebase } = require('@lib/firebaseUtil.js');
 
 router.post('/', express.json(), async (req, res) => {
   const { filename, fileUrl } = req.body;
 
   try {
-    const ids = await processFileToPinecone(filename, fileUrl);
+    let ids = [];//await processFileToPinecone(filename, fileUrl);
+
+    if (fileType === 'json') {
+      // Process JSON file
+      ids = await processJSONFile(filename, fileUrl);
+    } else if (fileType === 'markdown') {
+      // Process Markdown file
+      ids = await processFileToPinecone(filename, fileUrl);
+    }
+
     //upload to firebase
     await saveFileVectorIdsToFirebase(filename, ids);
     res.json({ message: 'File processed and upserted successfully', fileUrl });

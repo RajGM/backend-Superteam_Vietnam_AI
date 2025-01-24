@@ -1,0 +1,235 @@
+{
+    "superteam_members": [
+      {
+        "id": "ST001",
+        "name": "Nguyen An",
+        "role": "Backend Developer",
+        "skills": ["Python", "Django", "REST APIs", "PostgreSQL", "Docker"],
+        "expertise": "Building scalable backend systems and APIs.",
+        "experience_level": "Senior",
+        "location": "Hanoi, Vietnam",
+        "projects": [
+          {
+            "name": "E-commerce Platform",
+            "description": "Developed a scalable backend for a major e-commerce platform."
+          },
+          {
+            "name": "Real-time Analytics Dashboard",
+            "description": "Implemented real-time data processing and visualization tools."
+          }
+        ],
+        "contact_info": {
+          "email": "nguyen.an@example.com",
+          "telegram": "@nguyen_an_backend"
+        }
+      },
+      {
+        "id": "ST002",
+        "name": "Tran Bao",
+        "role": "Frontend Developer",
+        "skills": ["JavaScript", "React.js", "Redux", "TypeScript", "CSS3"],
+        "expertise": "Creating responsive and interactive user interfaces.",
+        "experience_level": "Mid-level",
+        "location": "Ho Chi Minh City, Vietnam",
+        "projects": [
+          {
+            "name": "Social Media App",
+            "description": "Designed and developed the frontend for a social media application."
+          },
+          {
+            "name": "Corporate Website",
+            "description": "Built a responsive corporate website with dynamic content."
+          }
+        ],
+        "contact_info": {
+          "email": "tran.bao@example.com",
+          "telegram": "@tran_bao_frontend"
+        }
+      },
+      {
+        "id": "ST003",
+        "name": "Le Chi",
+        "role": "DevOps Engineer",
+        "skills": ["AWS", "Kubernetes", "CI/CD", "Terraform", "Linux"],
+        "expertise": "Automating deployment pipelines and managing cloud infrastructure.",
+        "experience_level": "Senior",
+        "location": "Da Nang, Vietnam",
+        "projects": [
+          {
+            "name": "Microservices Deployment",
+            "description": "Set up Kubernetes clusters for deploying microservices architecture."
+          },
+          {
+            "name": "Continuous Integration Pipeline",
+            "description": "Implemented CI/CD pipelines using Jenkins and Terraform."
+          }
+        ],
+        "contact_info": {
+          "email": "le.chi@example.com",
+          "telegram": "@le_chi_devops"
+        }
+      },
+      {
+        "id": "ST004",
+        "name": "Pham Dung",
+        "role": "Mobile Developer",
+        "skills": ["Flutter", "Dart", "iOS", "Android", "Firebase"],
+        "expertise": "Developing cross-platform mobile applications.",
+        "experience_level": "Mid-level",
+        "location": "Hanoi, Vietnam",
+        "projects": [
+          {
+            "name": "Health Tracking App",
+            "description": "Developed a Flutter-based mobile app for tracking health metrics."
+          },
+          {
+            "name": "E-learning Platform",
+            "description": "Created mobile applications for an online education platform."
+          }
+        ],
+        "contact_info": {
+          "email": "pham.dung@example.com",
+          "telegram": "@pham_dung_mobile"
+        }
+      },
+      {
+        "id": "ST005",
+        "name": "Hoang Mai",
+        "role": "UI/UX Designer",
+        "skills": ["Figma", "Adobe XD", "User Research", "Wireframing", "Prototyping"],
+        "expertise": "Designing user-centric interfaces and experiences.",
+        "experience_level": "Senior",
+        "location": "Ho Chi Minh City, Vietnam",
+        "projects": [
+          {
+            "name": "FinTech Dashboard",
+            "description": "Designed the UI/UX for a financial analytics dashboard."
+          },
+          {
+            "name": "Travel Booking App",
+            "description": "Created intuitive designs for a travel booking mobile application."
+          }
+        ],
+        "contact_info": {
+          "email": "hoang.mai@example.com",
+          "telegram": "@hoang_mai_design"
+        }
+      },
+      {
+        "id": "ST006",
+        "name": "Vu Minh",
+        "role": "Data Scientist",
+        "skills": ["Python", "Machine Learning", "TensorFlow", "Pandas", "SQL"],
+        "expertise": "Building predictive models and data analysis.",
+        "experience_level": "Mid-level",
+        "location": "Can Tho, Vietnam",
+        "projects": [
+          {
+            "name": "Customer Churn Prediction",
+            "description": "Developed machine learning models to predict customer churn."
+          },
+          {
+            "name": "Sales Forecasting",
+            "description": "Implemented time series models for accurate sales forecasting."
+          }
+        ],
+        "contact_info": {
+          "email": "vu.minh@example.com",
+          "telegram": "@vu_minh_data"
+        }
+      },
+      {
+        "id": "ST007",
+        "name": "Ngo Thao",
+        "role": "Blockchain Developer",
+        "skills": ["Solidity", "Ethereum", "Smart Contracts", "Web3.js", "Truffle"],
+        "expertise": "Developing decentralized applications and smart contracts.",
+        "experience_level": "Senior",
+        "location": "Hanoi, Vietnam",
+        "projects": [
+          {
+            "name": "Decentralized Finance Platform",
+            "description": "Built smart contracts for a DeFi platform integrating Twitter for social signals."
+          },
+          {
+            "name": "NFT Marketplace",
+            "description": "Developed an NFT marketplace with seamless user interactions."
+          }
+        ],
+        "contact_info": {
+          "email": "ngo.thao@example.com",
+          "telegram": "@ngo_thao_blockchain"
+        }
+      },
+      {
+        "id": "ST008",
+        "name": "Bui Quang",
+        "role": "Full Stack Developer",
+        "skills": ["JavaScript", "Node.js", "React.js", "MongoDB", "GraphQL"],
+        "expertise": "End-to-end web application development.",
+        "experience_level": "Mid-level",
+        "location": "Ho Chi Minh City, Vietnam",
+        "projects": [
+          {
+            "name": "Project Management Tool",
+            "description": "Developed a full-stack project management web application."
+          },
+          {
+            "name": "Online Marketplace",
+            "description": "Created a scalable online marketplace with real-time features."
+          }
+        ],
+        "contact_info": {
+          "email": "bui.quang@example.com",
+          "telegram": "@bui_quang_fullstack"
+        }
+      },
+      {
+        "id": "ST009",
+        "name": "Dang Linh",
+        "role": "AI Engineer",
+        "skills": ["Python", "TensorFlow", "PyTorch", "Natural Language Processing", "Computer Vision"],
+        "expertise": "Developing AI models for various applications.",
+        "experience_level": "Senior",
+        "location": "Da Nang, Vietnam",
+        "projects": [
+          {
+            "name": "Chatbot Development",
+            "description": "Built intelligent chatbots for customer support using NLP techniques."
+          },
+          {
+            "name": "Image Recognition System",
+            "description": "Implemented computer vision models for automated image classification."
+          }
+        ],
+        "contact_info": {
+          "email": "dang.linh@example.com",
+          "telegram": "@dang_linh_ai"
+        }
+      },
+      {
+        "id": "ST010",
+        "name": "Phan Huong",
+        "role": "Product Manager",
+        "skills": ["Agile Methodologies", "Project Management", "User Story Mapping", "JIRA", "Stakeholder Communication"],
+        "expertise": "Leading product development and ensuring alignment with business goals.",
+        "experience_level": "Senior",
+        "location": "Ho Chi Minh City, Vietnam",
+        "projects": [
+          {
+            "name": "Mobile App Launch",
+            "description": "Managed the development and launch of a successful mobile application."
+          },
+          {
+            "name": "Platform Expansion",
+            "description": "Led the expansion of a web platform to new markets, increasing user base by 50%."
+          }
+        ],
+        "contact_info": {
+          "email": "phan.huong@example.com",
+          "telegram": "@phan_huong_pm"
+        }
+      }
+    ]
+  }
+  
