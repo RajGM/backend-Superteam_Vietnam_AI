@@ -21,31 +21,23 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, async () => {
 
-  try {
-    await slackApp.start(process.env.PORT_BOLT || 3003);
-    console.log('⚡️ Bolt app is running!');
-  } catch (error) {
-    console.log(error);
-    console.log(error.data.response_metadata);
-  }
+    console.log(`Express server listening on port ${PORT}`);
 
-  console.log(`Express server listening on port ${PORT}`);
+    // Schedule cron job to run every 12 hours
+    // cron.schedule('0 */12 * * *', async () => {
+    //     console.log('Cron job triggered: Fetching new messages and threads...');
+    //     try {
+    //         const lastStoredTS = await getLastProcessedTS();
+    //         const { lastProcessedTS, threadsData } = await fetchNewMessagesAndThreads(lastStoredTS, CHANNEL_ID);
+    //         await processThreads(threadsData, CHANNEL_ID);
+    //         await updateLastProcessedTS(lastProcessedTS);
 
-  // Schedule cron job to run every 12 hours
-  cron.schedule('0 */12 * * *', async () => {
-    console.log('Cron job triggered: Fetching new messages and threads...');
-    try {
-      const lastStoredTS = await getLastProcessedTS();
-      const { lastProcessedTS, threadsData } = await fetchNewMessagesAndThreads(lastStoredTS, CHANNEL_ID);
-      await processThreads(threadsData, CHANNEL_ID);
-      await updateLastProcessedTS(lastProcessedTS);
-
-      console.log('Successfully fetched new messages and threads.');
-    } catch (err) {
-      console.error('Error during cron job execution:', err);
-    }
-  });
+    //         console.log('Successfully fetched new messages and threads.');
+    //     } catch (err) {
+    //         console.error('Error during cron job execution:', err);
+    //     }
+    // });
 
 
-  console.log('Cron job scheduled to run every second.');
+    console.log('Cron job scheduled to run every second.');
 });
