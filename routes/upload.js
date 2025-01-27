@@ -9,11 +9,13 @@ router.post('/', express.json(), async (req, res) => {
 
   try {
     let ids = [];//await processFileToPinecone(filename, fileUrl);
+    const fileType = filename.split('.').pop().toLowerCase();
+    console.log('fileType:', fileType);
 
     if (fileType === 'json') {
       // Process JSON file
       ids = await processJSONFile(filename, fileUrl);
-    } else if (fileType === 'markdown') {
+    } else if (fileType === 'md') {
       // Process Markdown file
       ids = await processFileToPinecone(filename, fileUrl);
     }
