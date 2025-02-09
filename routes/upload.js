@@ -1,7 +1,7 @@
 // Example Express route for /upload
 const express = require('express');
 const router = express.Router();
-const { processFileToPinecone, deleteVectorsByIds, processJSONFile } = require('@lib/query.js');
+const { deleteVectorsByIds, processJSONFile } = require('@lib/query.js');
 const { saveFileVectorIdsToFirebase, fetchFileVectorIdsFromFirebase } = require('@lib/firebaseUtil.js');
 
 router.post('/', express.json(), async (req, res) => {
@@ -14,11 +14,13 @@ router.post('/', express.json(), async (req, res) => {
 
     if (fileType === 'json') {
       // Process JSON file
-      ids = await processJSONFile(filename, fileUrl);
-    } else if (fileType === 'md') {
-      // Process Markdown file
-      ids = await processFileToPinecone(filename, fileUrl);
+      ids = await processJSONFile(fileUrl);
     }
+
+    // else if (fileType === 'md') {
+    //   // Process Markdown file
+    //   ids = await processFileToPinecone(filename, fileUrl);
+    // }
 
     //upload to firebase
     await saveFileVectorIdsToFirebase(filename, ids);

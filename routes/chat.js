@@ -10,6 +10,7 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ error: 'Query parameter is required.' });
     }
 
+    console.log(history, query);
     const answer = await processQuery(history, query);
     return res.status(200).json({ answer });
 
