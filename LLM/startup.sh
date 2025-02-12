@@ -12,7 +12,7 @@ echo "Pulling Mistral model..."
 #ollama pull mistral
 
 echo "Pulling BGE-Large model..."
-#ollama pull bge-large
+ollama pull bge-large
 
 echo "Models pulled and Ollama service is running."
 # Wait indefinitely (or tail logs) so that the container doesn't exit.
